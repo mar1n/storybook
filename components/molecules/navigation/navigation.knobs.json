@@ -9,11 +9,17 @@
 		"group": "variation"
 	},
 	"items": {
-		"label": "items",
+		"label": "Items",
 		"default": [
-			{ "title": "Home", "url": "/"},
-			{ "title": "Aboutus", "url": "/about"},
-			{ "title": "Contact", "url": "/contact"}
+			{ "title": "Home", "url": "/" },
+			{
+				"title": "About us",
+				"url": "/about"
+			},
+			{
+				"title": "Contact",
+				"url": "/contact"
+			}
 		],
 		"group": "content"
 	}

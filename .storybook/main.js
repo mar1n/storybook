@@ -9,7 +9,7 @@ module.exports = {
     "@storybook/addon-docs/register",
     "storybook-addon-designs/register",
     {
-      name: "@storybook/addon-docs/react/preset",
+      name: "@storybook/addon-docs/preset",
       options: {
         configureJSX: true
       }
