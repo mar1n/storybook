@@ -1,0 +1,20 @@
+{
+	"direction": {
+		"label": "Direction",
+		"options": {
+			"horizontal": "horizontal",
+			"vertical": "vertical"
+		},
+		"default": "horizontal",
+		"group": "variation"
+	},
+	"items": {
+		"label": "items",
+		"default": [
+			{ "title": "Home", "url": "/"},
+			{ "title": "Aboutus", "url": "/about"},
+			{ "title": "Contact", "url": "/contact"}
+		],
+		"group": "content"
+	}
+}

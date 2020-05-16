@@ -10,32 +10,40 @@ const buttonClicked = e => {
 }
 
 import knobData from "./button.knobs.json"
-const { icon } = knobData
 
-export const basicButton = () => <Button>Button text</Button>;
+const { icon, innerText } = knobData;
 
+export const basicButton = () => (
+	<Button>{text(innerText.label, innerText.default, innerText.group)}</Button>
+);
 export const secondaryButton = () => (
-	<Button variant="secondary">Button text</Button>
-)
+	<Button variant="secondary">
+		{text(innerText.label, "Secondary button", innerText.group)}
+	</Button>
+);
 export const tertiaryButton = () => (
-	<Button variant="tertiary">Button text</Button>
-)
-export const iconButton = () => <Button icon="bag">Button text</Button>
-export const functionButtpn = () => (<Button onClick={buttonClicked}>Function Button</Button>)
-export const linkButton = () => <Button href="/route">Linked Button</Button>
-
-basicButton.story = {
-  name: 'Basic button',
-  parameters: {
-    design: {
-      type: 'figma',
-      url: 'https://www.figma.com/file/LKQ4FJ4bTnCSjedbRpk931/Sample-File'
-    }
-  }
-}
+	<Button variant="tertiary">
+		{text(innerText.label, "Tertiary button", innerText.group)}
+	</Button>
+);
+export const iconButton = () => (
+	<Button icon={select(icon.label, icon.options, icon.default, icon.group)}>
+		{text(innerText.label, "Icon button", innerText.group)}
+	</Button>
+);
+export const functionButton = () => (
+	<Button onClick={buttonClicked}>
+		{text(innerText.label, "Function button", innerText.group)}
+	</Button>
+);
+export const linkedButton = () => (
+	<Button href="/route">
+		{text(innerText.label, "Link button", innerText.group)}
+	</Button>
+);
 
 export default {
-  component: Button,
-  decorators: [withDesign],
-  title: 'Button',
+	component: Button,
+	decorators: [withKnobs],
+	title: "Atoms|Button"
 };
