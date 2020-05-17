@@ -19,6 +19,8 @@
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-is": "^16.13.1",
+    "react-slick": "^0.26.1",
+    "slick-carousel": "^1.8.1",
     "storybook-addon-designs": "^5.2.1",
     "styled-components": "^5.1.0"
   },
